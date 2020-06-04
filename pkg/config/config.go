@@ -86,7 +86,7 @@ type ProwConfig struct {
 	// components will use for looking up LighthouseJobs. The namespace
 	// needs to exist and will not be created by prow.
 	// Defaults to "default".
-	LighthouseJobNamespace string `json:"lighthouseJob_namespace,omitempty"`
+	LighthouseJobNamespace string `json:"prowjob_namespace,omitempty"`
 	// PodNamespace is the namespace in the cluster that prow
 	// components will use for looking up Pods owned by LighthouseJobs.
 	// The namespace needs to exist and will not be created by prow.
