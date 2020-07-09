@@ -52,7 +52,7 @@ func TestDefaultJobBase(t *testing.T) {
 				j.Agent = ""
 			},
 			expected: func(j *JobBase) {
-				j.Agent = string(TektonAgent)
+				j.Agent = string(JenkinsXAgent)
 			},
 		},
 		{
@@ -265,7 +265,7 @@ deck:
 }
 
 func TestValidateAgent(t *testing.T) {
-	k := string(TektonAgent)
+	k := string(JenkinsXAgent)
 	ns := "default"
 	base := JobBase{
 		Agent:     k,
@@ -345,7 +345,7 @@ func TestValidateLabels(t *testing.T) {
 }
 
 func TestValidateJobBase(t *testing.T) {
-	ka := string(TektonAgent)
+	ka := string(JenkinsXAgent)
 	goodSpec := v1.PodSpec{
 		Containers: []v1.Container{
 			{},
