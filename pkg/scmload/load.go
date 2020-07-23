@@ -4,13 +4,13 @@ import (
 	"context"
 	"strings"
 
-	"github.com/ghodss/yaml"
 	"github.com/jenkins-x/go-scm/scm"
 	"github.com/jenkins-x/lighthouse-config/pkg/apis/repository/v1alpha1"
 	"github.com/jenkins-x/lighthouse-config/pkg/config"
 	"github.com/jenkins-x/lighthouse-config/pkg/merge"
 	"github.com/jenkins-x/lighthouse-config/pkg/plugins"
 	"github.com/pkg/errors"
+	"sigs.k8s.io/yaml"
 )
 
 // MergeConfig merges the configuration with any `lighthouse.yaml` files in the repository

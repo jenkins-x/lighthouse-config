@@ -1,7 +1,6 @@
 module github.com/jenkins-x/lighthouse-config
 
 require (
-	github.com/ghodss/yaml v1.0.0
 	github.com/google/go-cmp v0.4.0
 	github.com/jenkins-x/go-scm v1.5.149
 	github.com/pkg/errors v0.8.1

@@ -3,7 +3,7 @@ package v1alpha1
 import (
 	"regexp"
 
-	pipelinev1alpha1 "github.com/tektoncd/pipeline/pkg/apis/pipeline/v1alpha1"
+	tektonv1beta1 "github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
 	v1 "k8s.io/api/core/v1"
 )
 
@@ -64,7 +64,7 @@ type JobBase struct {
 	// Spec is the Kubernetes pod spec used if Agent is kubernetes.
 	Spec *v1.PodSpec `json:"spec,omitempty"`
 	// PipelineRunSpec is the Tekton PipelineRun spec used if agent is tekton-pipeline
-	PipelineRunSpec *pipelinev1alpha1.PipelineRunSpec `json:"pipelineRunSpec,omitempty"`
+	PipelineRunSpec *tektonv1beta1.PipelineRunSpec `json:"pipelineRunSpec,omitempty"`
 
 	UtilityConfig
 }
